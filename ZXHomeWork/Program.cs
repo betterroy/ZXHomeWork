@@ -100,6 +100,11 @@ namespace ZXHomeWork
             CustomExtend customExtend = new CustomExtend();
             customExtend.Show();
             Console.WriteLine("************************委托套娃************************");
+            Console.WriteLine("************************委托套娃************************");
+            Console.WriteLine("************************委托套娃************************");
+            Console.WriteLine("************************委托套娃************************");
+            Console.WriteLine("************************委托套娃************************");
+            Console.WriteLine("************************委托套娃************************");
 
 
             Console.ReadLine();
