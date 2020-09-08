@@ -1,5 +1,6 @@
 ﻿using HomeWork.Class;
 using HomeWork.Class.AttributeExtend;
+using HomeWork.Class.DelegateEventExtend;
 using HomeWork.Class.DelegateExtend;
 using HomeWork.DB.InterFace;
 using HomeWork.SqlHelper;
@@ -90,22 +91,21 @@ namespace ZXHomeWork
             //Console.WriteLine("************************根据ID获取结束************************");
 
             //printNullLine();
-            Console.WriteLine("************************委托初尝试************************");
-            NormalExtend normalExtend = new NormalExtend();
-            normalExtend.Do();
-            Console.WriteLine("************************委托初尝试************************");
+            //Console.WriteLine("************************委托初尝试************************");
+            //NormalExtend normalExtend = new NormalExtend();
+            //normalExtend.Do();
+            //Console.WriteLine("************************委托初尝试************************");
 
-            printNullLine();
-            Console.WriteLine("************************委托套娃************************");
-            CustomExtend customExtend = new CustomExtend();
-            customExtend.Show();
-            Console.WriteLine("************************委托套娃************************");
-            Console.WriteLine("************************委托套娃************************");
-            Console.WriteLine("************************委托套娃************************");
-            Console.WriteLine("************************委托套娃************************");
-            Console.WriteLine("************************委托套娃************************");
-            Console.WriteLine("************************委托套娃************************");
-            Console.WriteLine("************************委托套娃************************");
+            //printNullLine();
+            //Console.WriteLine("************************委托套娃************************");
+            //CustomExtend customExtend = new CustomExtend();
+            //customExtend.Show();
+            //Console.WriteLine("************************委托套娃************************");
+
+
+            Console.WriteLine("************************发布订阅模式************************");
+            HookFishStandard.Show();
+            Console.WriteLine("************************发布订阅模式************************");
 
 
             Console.ReadLine();
