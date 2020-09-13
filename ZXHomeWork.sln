@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZXHomeWork", "ZXHomeWork\ZXHomeWork.csproj", "{0CB82BE9-3251-4710-9F82-55C5BA6A0CC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZXHomeWork", "ZXHomeWork\ZXHomeWork.csproj", "{0CB82BE9-3251-4710-9F82-55C5BA6A0CC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork.Class", "HomeWork.Class\HomeWork.Class.csproj", "{8C90DB80-613D-454D-9CD4-D03F3364C938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.Class", "HomeWork.Class\HomeWork.Class.csproj", "{8C90DB80-613D-454D-9CD4-D03F3364C938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork.SqlHelper", "HomeWork.SqlHelper\HomeWork.SqlHelper.csproj", "{2EB48E30-3693-4FD4-8695-FC32DD62AF7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.SqlHelper", "HomeWork.SqlHelper\HomeWork.SqlHelper.csproj", "{2EB48E30-3693-4FD4-8695-FC32DD62AF7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork.DB.InterFace", "HomeWork.DB.InterFace\HomeWork.DB.InterFace.csproj", "{CFD3C13C-45FE-4F30-A562-5CAD244A65B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.DB.InterFace", "HomeWork.DB.InterFace\HomeWork.DB.InterFace.csproj", "{CFD3C13C-45FE-4F30-A562-5CAD244A65B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork.LambdaAndLinq", "HomeWork.LambdaAndLinq\HomeWork.LambdaAndLinq.csproj", "{965330E4-AB87-4F1F-93FE-F59DD009D12E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CFD3C13C-45FE-4F30-A562-5CAD244A65B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD3C13C-45FE-4F30-A562-5CAD244A65B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD3C13C-45FE-4F30-A562-5CAD244A65B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HomeWork.Class\HomeWork.Class.csproj" />
     <ProjectReference Include="..\HomeWork.DB.InterFace\HomeWork.DB.InterFace.csproj" />
+    <ProjectReference Include="..\HomeWork.LambdaAndLinq\HomeWork.LambdaAndLinq.csproj" />
     <ProjectReference Include="..\HomeWork.SqlHelper\HomeWork.SqlHelper.csproj" />
   </ItemGroup>
 

@@ -3,9 +3,11 @@ using HomeWork.Class.AttributeExtend;
 using HomeWork.Class.DelegateEventExtend;
 using HomeWork.Class.DelegateExtend;
 using HomeWork.DB.InterFace;
+using HomeWork.LambdaAndLinq;
 using HomeWork.SqlHelper;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices.ComTypes;
 
@@ -25,7 +27,7 @@ namespace ZXHomeWork
             //////5.调用方法
             ////Company company = iDBHelper.Find(1);
             //Console.WriteLine("************根据ID获取开始************");
-            SqlServerHelper sqlServerHelper = new SqlServerHelper();
+            //SqlServerHelper sqlServerHelper = new SqlServerHelper();
             //Company company = sqlServerHelper.Find<Company>(1);
             //sqlServerHelper.PrintT<Company>(company);
             //User user = sqlServerHelper.Find<User>(1);
@@ -103,10 +105,22 @@ namespace ZXHomeWork
             //Console.WriteLine("************************委托套娃************************");
 
 
-            Console.WriteLine("************************发布订阅模式************************");
-            HookFishStandard.Show();
-            Console.WriteLine("************************发布订阅模式************************");
+            //Console.WriteLine("************************发布订阅模式************************");
+            //HookFishStandard.Show();
+            //Console.WriteLine("************************发布订阅模式************************");
 
+            //printNullLine();
+            //Console.WriteLine("************************Test Func and Action************************");
+            //Func<string, string> func = new Func<string, string>(NormalExtend.FuncDo);
+            //func += NormalExtend.FuncDo2;
+            //string name = "roy";
+            //name+=func.Invoke(name);
+            //Console.WriteLine("************************Test Func and Action************************");
+
+            Console.WriteLine("************************Lambda And Linq************************");
+            LinqTest.show();
+            Console.WriteLine("************************Lambda And Linq************************");
+            printNullLine();
 
             Console.ReadLine();
         }

@@ -61,5 +61,15 @@ namespace HomeWork.Class.DelegateExtend
         {
             fifth.Invoke(name);
         }
+        public static string FuncDo(string a)
+        {
+            Console.WriteLine("输出：" + a);
+            return a;
+        }
+        public static string FuncDo2(string a)
+        {
+            Console.WriteLine("输出：" + a);
+            return a;
+        }
     }
 }
