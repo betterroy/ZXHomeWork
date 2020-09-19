@@ -5,6 +5,7 @@ using HomeWork.Class.DelegateExtend;
 using HomeWork.DB.InterFace;
 using HomeWork.LambdaAndLinq;
 using HomeWork.SqlHelper;
+using HomeWork.ThreadS.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -117,10 +118,11 @@ namespace ZXHomeWork
             //name+=func.Invoke(name);
             //Console.WriteLine("************************Test Func and Action************************");
 
-            Console.WriteLine("************************Lambda And Linq************************");
-            LinqTest.show();
-            Console.WriteLine("************************Lambda And Linq************************");
-            printNullLine();
+            //Console.WriteLine("************************Lambda And Linq************************");
+            //LinqTest.show();
+            //Console.WriteLine("************************Lambda And Linq************************");
+            //printNullLine();
+
 
             Console.ReadLine();
         }
