@@ -16,6 +16,9 @@ namespace HomeWork.ThreadTest.Frameworks
             threadTest.show();
             Console.WriteLine("************************Thread************************");
             printNullLine();
+
+
+            Console.ReadLine();
         }
         static void printNullLine()
         {

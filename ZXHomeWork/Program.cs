@@ -5,7 +5,6 @@ using HomeWork.Class.DelegateExtend;
 using HomeWork.DB.InterFace;
 using HomeWork.LambdaAndLinq;
 using HomeWork.SqlHelper;
-using HomeWork.ThreadS.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
