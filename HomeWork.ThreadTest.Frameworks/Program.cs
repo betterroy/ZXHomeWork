@@ -11,10 +11,21 @@ namespace HomeWork.ThreadTest.Frameworks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("************************Thread************************");
             ThreadFistTest threadTest = new ThreadFistTest();
-            threadTest.show();
-            Console.WriteLine("************************Thread************************");
+            //Console.WriteLine("************************NormalThreadShow************************");
+            //threadTest.NormalThreadShow();
+            //Console.WriteLine("************************NormalThreadShow************************");
+            //printNullLine();
+
+            //Console.WriteLine("************************ThreadWithReturnShow************************");
+            //threadTest.ThreadWithReturnShow();
+            //Console.WriteLine("************************ThreadWithReturnShow************************");
+            //printNullLine();
+
+
+            Console.WriteLine("************************ThreadPoolShow************************");
+            threadTest.ThreadPoolShow();
+            Console.WriteLine("************************ThreadPoolShow************************");
             printNullLine();
 
 
