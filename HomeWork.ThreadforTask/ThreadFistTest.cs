@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HomeWork.ThreadS.Framework
+namespace HomeWork.ThreadforTask
 {
     public class ThreadFistTest
     {
@@ -15,12 +15,13 @@ namespace HomeWork.ThreadS.Framework
             Thread thread = new Thread(() => { Console.WriteLine("********************Normal Thread********************"); });//线程开始创建一个空方法
             thread.Start();     //线程开始
 
-            Action<string, int> action = (a, b) => { Console.WriteLine($"********************Action:{a + b}********************");
+            Action<string, int> action = (a, b) => {
+                Console.WriteLine($"********************Action:{a + b}********************");
                 Console.WriteLine("");
                 Console.WriteLine("");
             };  //action委托
 
-            AsyncCallback callBack = (IAsyncResult ar) => 
+            AsyncCallback callBack = (IAsyncResult ar) =>
             {
                 IAsyncResult arNew = ar;
                 Console.WriteLine("****************call Back Method****************");
@@ -100,7 +101,7 @@ namespace HomeWork.ThreadS.Framework
         }
         public void DoSomethingLong(string s)
         {
-            Console.WriteLine("这里是输出的："+s);
+            Console.WriteLine("这里是输出的：" + s);
             Thread.Sleep(3);
         }
         /// <summary>
@@ -220,30 +221,30 @@ namespace HomeWork.ThreadS.Framework
                 //mre.WaitOne();//只要是mre状态编程true;就继续往后执行； 
                 //Console.WriteLine("任务全部完成了。。。。。");
             }
+            {
+                ThreadPool.SetMaxThreads(16, 16);
+                ManualResetEvent mre = new ManualResetEvent(false);
+                for (int i = 0; i < 18; i++)
                 {
-                    ThreadPool.SetMaxThreads(16, 16);
-                    ManualResetEvent mre = new ManualResetEvent(false);
-                    for (int i = 0; i < 18; i++)
+                    int k = i;
+                    ThreadPool.QueueUserWorkItem(t =>
                     {
-                        int k = i;
-                        ThreadPool.QueueUserWorkItem(t =>
+                        Console.WriteLine($"ThreadId={Thread.CurrentThread.ManagedThreadId.ToString("00")} {k}");
+                        if (k == 17)
                         {
-                            Console.WriteLine($"ThreadId={Thread.CurrentThread.ManagedThreadId.ToString("00")} {k}");
-                            if (k == 17)
-                            {
-                                mre.Set();
-                            }
-                            else
-                            {
-                                mre.WaitOne();
-                            }
-                        });
-                    }
-                    if (mre.WaitOne())   //只有在mre.Set();执行以后，状态值为true,才能往后执行；
-                    {
-                        Console.WriteLine("所有任务执行完成。。。。。。");
-                    }
+                            mre.Set();
+                        }
+                        else
+                        {
+                            mre.WaitOne();
+                        }
+                    });
                 }
+                if (mre.WaitOne())   //只有在mre.Set();执行以后，状态值为true,才能往后执行；
+                {
+                    Console.WriteLine("所有任务执行完成。。。。。。");
+                }
+            }
 
 
             Console.WriteLine($"****************btnThreadpool_Click End   {Thread.CurrentThread.ManagedThreadId.ToString("00")} {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}***************");

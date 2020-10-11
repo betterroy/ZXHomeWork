@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HomeWork.Class\HomeWork.Class.csproj" />
+    <ProjectReference Include="..\HomeWork.Class\Course-1A2A3-HomeWork.AttributeDelegateClass.csproj" />
     <ProjectReference Include="..\HomeWork.DB.InterFace\HomeWork.DB.InterFace.csproj" />
-    <ProjectReference Include="..\HomeWork.LambdaAndLinq\HomeWork.LambdaAndLinq.csproj" />
-    <ProjectReference Include="..\HomeWork.SqlHelper\HomeWork.SqlHelper.csproj" />
+    <ProjectReference Include="..\HomeWork.LambdaAndLinq\Course-4A5-HomeWork.LambdaAndLinq.csproj" />
+    <ProjectReference Include="..\HomeWork.SqlHelper\Course-1-ZZHomeWork.Reflection-SqlHelper.csproj" />
   </ItemGroup>
 
   <ItemGroup>

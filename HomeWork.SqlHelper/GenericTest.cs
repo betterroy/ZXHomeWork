@@ -4,6 +4,7 @@ using System.Text;
 
 namespace HomeWork.SqlHelper
 {
+    //泛型
     public class GenericClass<T, W, X>
     {
         public void Show(T t, W w, X x)

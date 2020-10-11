@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZXHomeWorkStart", "ZXHomeWork\ZXHomeWorkStart.csproj", "{0CB82BE9-3251-4710-9F82-55C5BA6A0CC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-1-ZXHomeWorkStart", "ZXHomeWork\Course-1-ZXHomeWorkStart.csproj", "{0CB82BE9-3251-4710-9F82-55C5BA6A0CC1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.Class", "HomeWork.Class\HomeWork.Class.csproj", "{8C90DB80-613D-454D-9CD4-D03F3364C938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-1A2A3-HomeWork.AttributeDelegateClass", "HomeWork.Class\Course-1A2A3-HomeWork.AttributeDelegateClass.csproj", "{8C90DB80-613D-454D-9CD4-D03F3364C938}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.SqlHelper", "HomeWork.SqlHelper\HomeWork.SqlHelper.csproj", "{2EB48E30-3693-4FD4-8695-FC32DD62AF7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-1-ZZHomeWork.Reflection-SqlHelper", "HomeWork.SqlHelper\Course-1-ZZHomeWork.Reflection-SqlHelper.csproj", "{2EB48E30-3693-4FD4-8695-FC32DD62AF7E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.DB.InterFace", "HomeWork.DB.InterFace\HomeWork.DB.InterFace.csproj", "{CFD3C13C-45FE-4F30-A562-5CAD244A65B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.LambdaAndLinq", "HomeWork.LambdaAndLinq\HomeWork.LambdaAndLinq.csproj", "{965330E4-AB87-4F1F-93FE-F59DD009D12E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-4A5-HomeWork.LambdaAndLinq", "HomeWork.LambdaAndLinq\Course-4A5-HomeWork.LambdaAndLinq.csproj", "{965330E4-AB87-4F1F-93FE-F59DD009D12E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork.ThreadTest.Frameworks", "HomeWork.ThreadTest.Frameworks\HomeWork.ThreadTest.Frameworks.csproj", "{4E358FB5-49E6-4717-8E35-9B002DA41CA2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork.ThreadforTask", "HomeWork.ThreadforTask\HomeWork.ThreadforTask.csproj", "{0B828115-1363-4B9F-8457-6E5F72656B19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-6-HomeWork.ThreadforTask", "HomeWork.ThreadforTask\Course-6-HomeWork.ThreadforTask.csproj", "{0B828115-1363-4B9F-8457-6E5F72656B19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{965330E4-AB87-4F1F-93FE-F59DD009D12E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E358FB5-49E6-4717-8E35-9B002DA41CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E358FB5-49E6-4717-8E35-9B002DA41CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E358FB5-49E6-4717-8E35-9B002DA41CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E358FB5-49E6-4717-8E35-9B002DA41CA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B828115-1363-4B9F-8457-6E5F72656B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B828115-1363-4B9F-8457-6E5F72656B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B828115-1363-4B9F-8457-6E5F72656B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
