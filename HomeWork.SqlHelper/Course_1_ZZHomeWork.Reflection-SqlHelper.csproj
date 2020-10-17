@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HomeWork.Class\Course-1A2A3-HomeWork.AttributeDelegateClass.csproj" />
+    <ProjectReference Include="..\HomeWork.Class\Course_1A2A3_HomeWork.AttributeDelegateClass.csproj" />
     <ProjectReference Include="..\HomeWork.DB.InterFace\HomeWork.DB.InterFace.csproj" />
   </ItemGroup>
 

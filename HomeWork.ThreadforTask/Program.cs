@@ -1,3 +1,4 @@
+using Course_6_HomeWork.ThreadforTask.HomeWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace HomeWork.ThreadforTask
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new DragonEight());
         }
     }
 }
