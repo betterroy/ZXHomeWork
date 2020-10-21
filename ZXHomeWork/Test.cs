@@ -8,12 +8,13 @@ namespace ZXHomeWork
 {
     class Test
     {
-        private void Main()
+        public void Main()
         {
-            //Console.WriteLine("获取反射类开始!");
-            //IDBHelper iDBHelper = SimpleFactory.getClass();
-            ////5.调用方法
-            //Company company = iDBHelper.Find(1);
+            Console.WriteLine("获取反射类开始!");
+            IDBHelper iDBHelper = SimpleFactory.getClass();
+            //IDBHelper iDBHelper1 = SimpleFactory.getClass();
+            //5.调用方法
+            Company company = iDBHelper.Find(1);
 
 
 
@@ -194,12 +195,12 @@ namespace ZXHomeWork
                     ////准备给大家来一个手写ORM；ORM--就是通过类的使用达成对数据库的使用；无非就是增删改查；
 
                     {
-                        SqlServerHelper sqlServerHelper = new SqlServerHelper();
-                        //Company company = sqlServerHelper.QueryCompany(1); 
-                        Company company = sqlServerHelper.Find<Company>(1);
-                        User user = sqlServerHelper.Find<User>(1);
-                        Console.WriteLine(company);
-                        Console.WriteLine(user);
+                        //SqlServerHelper sqlServerHelper = new SqlServerHelper();
+                        ////Company company = sqlServerHelper.QueryCompany(1); 
+                        //Company company = sqlServerHelper.Find<Company>(1);
+                        //User user = sqlServerHelper.Find<User>(1);
+                        //Console.WriteLine(company);
+                        //Console.WriteLine(user);
                     }
                     //升级一下。。
                     //如果我想要来查询Usernew？

@@ -17,7 +17,8 @@ namespace ZXHomeWork
     {
         static void Main(string[] args)
         {
-
+            Test test = new Test();
+            test.Main();
             //Dictionary<string, string> myDic = new Dictionary<string, string>();
             //myDic.Add("param1", "1");//公司
             //myDic.Add("param2", "2");//订单号
