@@ -39,8 +39,32 @@ namespace Course_6_HomeWork.ThreadforTask.HomeWork
         TaskFactory taskFactory = new TaskFactory();
         //锁
         private static readonly object obj_Lock = new object();
+
+
+        ////假如说我想控制下Task的并发数量，该怎么做？  20个
+        List<Task> taskList = new List<Task>();
+        
+
         private void button1_Click(object sender, EventArgs e)
         {
+            //taskFactory.StartNew(() =>
+            //{
+            //    for (int i = 0; i < 30; i++)
+            //    {
+            //        int k = i;
+            //        if (taskList.Count(t => t.Status != TaskStatus.RanToCompletion) >= 20)
+            //        {
+            //            Task.WaitAny(taskList.ToArray());
+            //            taskList = taskList.Where(t => t.Status != TaskStatus.RanToCompletion).ToList();
+            //        }
+            //        taskList.Add(Task.Run(() =>
+            //        {
+            //            cwStr($"This is {k} running ThreadId={Thread.CurrentThread.ManagedThreadId.ToString("00")}\r\n");
+            //            Thread.Sleep(2000);
+            //        }));
+            //    }
+            //});
+
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             Task.Run(() =>
@@ -131,5 +155,6 @@ namespace Course_6_HomeWork.ThreadforTask.HomeWork
                 richTextBox1.Text += str;
             }));
         }
+
     }
 }
