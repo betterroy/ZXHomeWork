@@ -8,6 +8,7 @@ namespace HomeWork.Class.DelegateExtend
 {
     public class CustomExtend
     {
+        //展示
         public void Show()
         {
             InvokeDelegate invokeDelegate = new InvokeDelegate();
