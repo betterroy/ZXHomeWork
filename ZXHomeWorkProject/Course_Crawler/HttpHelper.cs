@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZhaoXi.Advanced.Utility
+namespace Course_Crawler
 {
     public class HttpHelper
     {
@@ -16,9 +16,9 @@ namespace ZhaoXi.Advanced.Utility
         /// </summary>
         /// <param name="url"></param>
         /// <returns></returns>
-        public static string DownloadUrl(string url)
+        public static string DownloadUrl(string url,string cookie="")
         {
-            return DownloadHtml(url, Encoding.UTF8);
+            return DownloadHtml(url, Encoding.UTF8, cookie);
         }
          
         /// <summary>
@@ -28,7 +28,7 @@ namespace ZhaoXi.Advanced.Utility
         /// </summary>
         /// <param name="url"></param>
         /// <returns></returns>
-        public static string DownloadHtml(string url, Encoding encode)
+        public static string DownloadHtml(string url, Encoding encode, string cookie = "")
         {
             string html = string.Empty;
             try
@@ -54,6 +54,11 @@ namespace ZhaoXi.Advanced.Utility
                 //request.Headers.Add("Referer", "http://list.yhd.com/c0-0/b/a-s1-v0-p1-price-d0-f0-m1-rt0-pid-mid0-kiphone/");
 
                 //Encoding enc = Encoding.GetEncoding("GB2312"); // 如果是乱码就改成 utf-8 / GB2312 
+                if (cookie != "")
+                {
+                    request.Headers.Add("Cookie", cookie);
+                }
+
                 //如何自动读取cookie
                 request.CookieContainer = new CookieContainer();//1 给请求准备个container
                 using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)//发起请求

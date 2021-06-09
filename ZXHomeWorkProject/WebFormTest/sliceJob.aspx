@@ -12,10 +12,11 @@
         <div>
             <span id="cpmpareText" style="font-size: 24px"></span>
         </div>
+        <button onclick="login()">点我登陆</button>
     </form>
     <script src="scripts/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
-        sliceJob();
+        //sliceJob();
         function sliceJob() {
             for (var i = 0; i < 100000; i++) {
                 //$("#cpmpareText").html(i);
@@ -40,6 +41,22 @@
             //        window.clearInterval(intv);
             //    }
             //}, 50);
+        }
+        function login() {
+            var data = { Loginname: "wangya", Loginpwd: "1", Verifycode: "" };
+            var json = JSON.stringify(data);
+            var encrypted = encrypt.encrypt(json);
+            json = encodeURI(encrypted).replace(/\+/g, '%2B');
+
+            $.ajax({
+                url: "http://10.64.0.248/data/ashx/system/LoginServer.ashx",
+                data: { submitData: json },
+                type: "post",
+                dataType: "json",
+                success: function (res) {
+                    var a = res;
+                }
+            });
         }
     </script>
 </body>

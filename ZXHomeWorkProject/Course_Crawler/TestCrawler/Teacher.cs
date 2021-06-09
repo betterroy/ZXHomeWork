@@ -5,23 +5,17 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace Course_Crawler
+namespace Course_Crawler.TestCrawler
 {
-    class Program
+    class Teacher
     {
-        static void Main(string[] args)
-        {
-            //string html = LoginSimulation();
-            string html = new Teacher().LoginSimulation1();
-            //new Web().GetHtml();
-            Console.Read();
-        }
-        static string LoginSimulation()
+
+        public string LoginSimulation1()
         {
             string a = "\"";
-            string url = "https://passport.cnblogs.com/user/signin";
+            string url = "http://10.64.0.248/data/ashx/system/LoginServer.ashx?submitData=OI0vd7cmTLbuahRssbOtsiHk5D//5NTFF5Rpot1DfGfBfAX6unJZkxRXlXNE%2B8aCCuKcWySdUf%2BU58GI70unfYh/oS8Y2VFmWfmgaag3VcNUJXjYHhi6fm%2BbE6lMkWrRHJV52Z/KQe1w1SrH5DQRoAJOZAoVmMnlit9dQ/1AYEg=";
             //string postData = "{\"input1\":\"MvxmwEWfUF26IvKNa1dUiZn1xmSBhNW0wJyoaUlDPXoh+Mb+z2eZK3r3c9Jd0aT0/Wzz3ht7LMeTllu8ISY9nfQIuKB0C19Y9/IfKYSktpZZOVaKx/XP3i/"+"mGxXC3K5m2la91ViRh3BO36xT4E98dbqVHPtynjuNafuVIBF5a2M=\",\"input2\":\"xxxx\":false}";
-            string postData = "{\"input1\":\"MvxmwEWfUF26IvKNa1dUiZn1xmSBhNW0wJyoaUlDPXoh+Mb+z2eZK3r3c9Jd0aT0/Wzz3ht7LMeTllu8ISY9nfQIuKB0C19Y9/IfKYSktpZZOVaKx/XP3i/" + "mGxXC3K5m2la91ViRh3BO36xT4E98dbqVHPtynjuNafuVIBF5a2M=\",\"input2\":\"xxxx\":false}";
+            string postData = "{\"submitData\": \"OI0vd7cmTLbuahRssbOtsiHk5D//5NTFF5Rpot1DfGfBfAX6unJZkxRXlXNE%2B8aCCuKcWySdUf%2BU58GI70unfYh/oS8Y2VFmWfmgaag3VcNUJXjYHhi6fm%2BbE6lMkWrRHJV52Z/KQe1w1SrH5DQRoAJOZAoVmMnlit9dQ/1AYEg=\"}";
 
             //1.获取登录Cookie
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
@@ -39,10 +33,10 @@ namespace Course_Crawler
             string cookies = resp.Headers.Get("Set-Cookie");//获取登录后的cookie值。
 
             //2.登录想爬取页面的构造，主要多一个Cookie的构造
-            string contentUrl = "https://home.cnblogs.com/u/xinjian/";
+            string contentUrl = "http://10.64.0.248/buess/quality/Report/Frm_QMReport.aspx?pagecode=11283&sd=-31&sd1=0&yb=ccsl";
             HttpWebRequest reqContent = (HttpWebRequest)WebRequest.Create(contentUrl);
             reqContent.Method = "GET";
-            reqContent.AllowAutoRedirect = false;//服务端重定向。一般设置false
+            reqContent.AllowAutoRedirect = true;//服务端重定向。一般设置false
             reqContent.ContentType = "application/x-www-form-urlencoded";//数据一般设置这个值，除非是文件上传
 
             reqContent.CookieContainer = new CookieContainer();
