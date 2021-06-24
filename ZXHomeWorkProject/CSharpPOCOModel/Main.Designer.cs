@@ -105,19 +105,19 @@
             // 连接到ToolStripMenuItem
             // 
             this.连接到ToolStripMenuItem.Name = "连接到ToolStripMenuItem";
-            this.连接到ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.连接到ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.连接到ToolStripMenuItem.Text = "连接到服务器";
             this.连接到ToolStripMenuItem.Click += new System.EventHandler(this.连接到ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 

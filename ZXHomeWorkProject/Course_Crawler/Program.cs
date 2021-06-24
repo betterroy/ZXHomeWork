@@ -12,8 +12,9 @@ namespace Course_Crawler
         static void Main(string[] args)
         {
             //string html = LoginSimulation();
-            string html = new Teacher().LoginSimulation1();
+            //string html = new Teacher().LoginSimulation1();
             //new Web().GetHtml();
+            new ChromeDriverMethod().Show();
             Console.Read();
         }
         static string LoginSimulation()
