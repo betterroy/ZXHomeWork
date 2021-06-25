@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course_Crawler", "ZXHomeWor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vegoo.Lucene", "Vegoo.Lucene", "{3470C51E-B77A-4066-AC34-5DD57B6B59DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection.Data", "Collection.Data\Collection.Data.csproj", "{5C89B8BF-A4CE-4B4A-81C3-13E13309987E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection.Data.Framework", "Collection.Data.Framework\Collection.Data.Framework.csproj", "{8A24D848-1BDC-4A79-814A-44119B6E0BFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,16 +73,16 @@ Global
 		{C2618A4B-2B0F-42A8-8DF4-413E56F5608E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2618A4B-2B0F-42A8-8DF4-413E56F5608E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2618A4B-2B0F-42A8-8DF4-413E56F5608E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C89B8BF-A4CE-4B4A-81C3-13E13309987E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C89B8BF-A4CE-4B4A-81C3-13E13309987E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C89B8BF-A4CE-4B4A-81C3-13E13309987E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C89B8BF-A4CE-4B4A-81C3-13E13309987E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A24D848-1BDC-4A79-814A-44119B6E0BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A24D848-1BDC-4A79-814A-44119B6E0BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A24D848-1BDC-4A79-814A-44119B6E0BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A24D848-1BDC-4A79-814A-44119B6E0BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5C89B8BF-A4CE-4B4A-81C3-13E13309987E} = {3470C51E-B77A-4066-AC34-5DD57B6B59DA}
+		{8A24D848-1BDC-4A79-814A-44119B6E0BFB} = {3470C51E-B77A-4066-AC34-5DD57B6B59DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46865805-3589-4A13-8A7A-EC70A4CD1E6F}

@@ -1,0 +1,13 @@
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.csproj.AssemblyReference.cache
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.Properties.Resources.resources
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.WriteLucene.resources
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.csproj.GenerateResource.cache
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.csproj.CoreCompileInputs.cache
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\bin\Debug\Collection.Data.Framework.exe.config
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\bin\Debug\Collection.Data.Framework.exe
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\bin\Debug\Collection.Data.Framework.pdb
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\bin\Debug\Newtonsoft.Json.dll
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\bin\Debug\Newtonsoft.Json.xml
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.csproj.CopyComplete
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.exe
+D:\Develop\net\allTest\ZXHomeWorkProject\Collection.Data.Framework\obj\Debug\Collection.Data.Framework.pdb
